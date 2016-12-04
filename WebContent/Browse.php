@@ -17,8 +17,10 @@ if ( ! $connection )
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>GameXplorer || Browse games</title>
-<link href="Style/Home.css" rel="stylesheet">
 
+<link href="Style/thumbnail-slider.css" rel="stylesheet" />
+<link href="Style/Home.css" rel="stylesheet">
+<script src="js/thumbnail-slider.js" type="text/javascript"></script>
 <style type="text/css">
 .title{
 width:500px;
@@ -112,8 +114,6 @@ $('#searchid').click(function(){
 	
 	</form>
     <div id="result"></div>
-</div>
-
 
 </div>
 <?php 
@@ -124,13 +124,65 @@ $('#searchid').click(function(){
 				$a=0;
 				 $rownum=mysql_result($result,$a,"num");
 				 ?>
-<div class="recents" style="position:absolute;top:400px;">
-	<div>
 
-		<h4>Filter By:</h4>
 
-	</div>
-<p align="center"><?php echo "$rownum" ?> &nbsp; RECENTS GAMES</p>
+<div style="padding:50px 0;background:#eee;" class="genre">
+
+		<h4>Genre</h4><br>
+		
+        <div id="thumbnail-slider">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <div style="background:rgba(10,10,10,0.5);"><p align="center">ACTION</p><img class="thumb" src="img/actn.jpg" ></div><br>
+                        
+                    </li>
+                    <li>
+                        <div style="background:rgba(190,180,77,0.5);"><img class="thumb" src="img/fntsy.jpg"></div>
+                    </li>
+                    <li>
+                        <div style="background:rgba(10,10,10,0.5);"><img class="thumb" src="img/stlth.jpg"></div>
+                    </li>
+                    <li>
+                        <div style="background:rgba(180,80,190,0.5);"><img class="thumb" src="img/advntre.jpg"></div>
+                    </li>
+                    <li>
+                       <div style="background:rgba(10,10,10,0.5);"> <img class="thumb" src="img/fps.jpg"></div>
+                    </li>
+                      <li>
+                       <div style="background:rgba(255,255,255,0.5);"> <img class="thumb" src="img/tps.jpg"></div>
+                    </li>
+                      <li>
+                        <div style="background:rgba(100,190,80,0.5);"><img class="thumb" src="img/sprt.jpg"></div>
+                    </li>
+                      <li>
+                       <div style="background:rgba(50,120,190,0.5);"> <img class="thumb" src="img/race.jpg"></div>
+                    </li>
+                      <li>
+                        <div style="background:rgba(190,30,80,0.5);"><img class="thumb" src="img/horror.png"></div>
+                    </li>
+                      <li>
+                        <div style="background:rgba(25,190,170,0.5);"><img class="thumb" src="img/strtgy.jpg"></div>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+     </div>
+
+
+<div class="recents" style="position:absolute;top:700px;">
+
+<p align="left" style="font-size:18px;font-weight:200"><?php echo "$rownum" ?> &nbsp; Results found.</p>
+<label>Sort by:</label>
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Alphabetic &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-content">
+    <a href="#">Alphabetic</a>
+    <a href="#">Newest</a>
+    <a href="#">Oldest</a>
+    <a href="#">Popularity</a>
+  </div>
+</div>
 
 <ul>
 <?php 
@@ -176,8 +228,19 @@ $(document).ready(function(){
 	$('#toright').animate({'margin-left':'0px'},"slow");
 	$('#toleft').animate({'margin-left':'0px'},"slow");
 });
+	$(document).click( function(){
+		$('.dropdown-content').removeClass('active');
+    });
+    
+$('.dropdown').click(function(){
+	event.stopPropagation();
+	$('.dropdown-content').addClass('active');
+});
+
 });
 
 </script>
+
+
 </body>
 </html>

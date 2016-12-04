@@ -1,254 +1,244 @@
 @charset "utf-8";
 /* CSS Document */
-
-*{
-margin:0;
-padding:0;	
-font-family: 'Lato', sans-serif;	
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
 }
-input,textarea{ outline:none;}
-.header1{
+
+input, textarea {
+	outline: none;
+}
+
+.header1 {
 	position: absolute;
 	top: 0px;
 	left: 0;
 	width: 100%;
 	height: 80px;
-
-	z-index:10;
+	z-index: 10;
 }
 
-.header1 a{
+.header1 a {
 	color: #fff;
 	text-decoration: none;
-	padding-left:25px;
+	padding-left: 25px;
 	padding-right: 30px;
 	margin-right: 20px;
-	margin-left:-10px;
-	margin-top:27px;
-	border-right:1px solid white;
+	margin-left: -10px;
+	margin-top: 27px;
+	border-right: 1px solid white;
 	float: right;
 	font-size: 16px;
-	font-weight:300;
-	
-}
-
-.shroud h1{
-	
-	color:#CC6;
-	margin:250px 80px;
-	font-size:38px;
-	font-weight:normal;
-	
-}
-
-.shroud h1 span{
-font-weight:300;	
-}
-
-.recents{
-position:absolute;
-top:100%;
-left:0;
-width:100%;
-height:auto;
-background:#222;	
-	
-}
-.recents div{
-	width:90%;
-	height:auto;
-	margin:20px 50px;
-}
-
-.recents div h4{
-	color:#b6baba;
 	font-weight: 300;
 }
-.recents p,.shots p{
-font-size:25px;
-padding-bottom:20px;
-color:#FFF;	
-margin:50px 100px;
-border-bottom:1px solid #666;
-}
-.recents ul{
 
-margin:58px;
-background:#1a1a1a;
-	padding-left:40px;
+.shroud h1 {
+	color: #CC6;
+	margin: 250px 80px;
+	font-size: 38px;
+	font-weight: normal;
 }
 
-.recents ul  li{
-display:inline-block;
-margin:32px;	
+.shroud h1 span {
+	font-weight: 300;
 }
 
-.recents li label{
-color:#FFF;	
-}
-.recents li span{
-color:gray;	
+.recents {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background: #222;
 }
 
-.recents li button{
-color:white;
-background:#0a0a0a;
-padding:4px 10px;
-font-size:14px;
-margin:0;
-border:none;
-border-radius:3px;
-margin-left:10px;	
+.recents p, .shots p {
+	font-size: 25px;
+	padding-bottom: 20px;
+	color: #FFF;
+	margin: 50px 60px;
+	border-bottom: 1px solid #666;
 }
-#getLink{
-cursor:pointer;
-padding:0px;
-margin:0;
-background:none;
-margin-left:0px;
-overflow:hidden;
-outline:none;			
+
+.recents ul {
+	margin: 58px;
+	background: #1a1a1a;
+	padding-left: 40px;
 }
+
+.recents ul  li {
+	display: inline-block;
+	margin: 32px;
+}
+
+.recents li label {
+	color: #FFF;
+}
+
+.recents li span {
+	color: gray;
+}
+
+.recents li button {
+	color: white;
+	background: #0a0a0a;
+	padding: 4px 10px;
+	font-size: 14px;
+	margin: 0;
+	border: none;
+	border-radius: 3px;
+	margin-left: 10px;
+}
+
+#getLink {
+	cursor: pointer;
+	padding: 0px;
+	margin: 0;
+	background: none;
+	margin-left: 0px;
+	overflow: hidden;
+	outline: none;
+}
+
 #getLink img {
--moz-transition:-moz-transform 0.3s ease-in; 
--webkit-transition:-webkit-transform 0.3s ease-in; 
--o-transition:-o-transform 0.3s ease-in;
-}
-#getLink:hover img{
--moz-transform:scale(1.1); 
--webkit-transform:scale(1.1);
--o-transform:scale(1.1);	
+	-moz-transition: -moz-transform 0.3s ease-in;
+	-webkit-transition: -webkit-transform 0.3s ease-in;
+	-o-transition: -o-transform 0.3s ease-in;
 }
 
-.gameDetailPanel img{
-margin:120px;	
-
+#getLink:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
 }
 
-.gameDetailPanel ul{
-position:absolute;
-width:500px;
-left:500px;
-top:120px;
-list-style:none;
-}
-.gameDetailPanel ul li{
-color:#FFF;
-margin:30px 0;
-font-size:20px;
+.gameDetailPanel img {
+	margin: 120px;
 }
 
-
-.gameDetailPanel ul p{
-font-size:40px;
-color:#CC9;	
+.gameDetailPanel ul {
+	position: absolute;
+	width: 500px;
+	left: 500px;
+	top: 120px;
+	list-style: none;
 }
 
-.gameDetailPanel ul li span{
-	padding:5px 10px;
-	background:#020202;
-	border:1px solid #333;
-	border-radius:3px;
-	font-size:16px;
-	
-}
-.gameDetailPanel ul li label{
-margin-left:20px;
-color:#0CC;
-font-size:15px;	
-	
-	
-}
-#canvas{
-	position:absolute;
-	right:100px;
-	top:100px;
-	
-}
-.shots{
-position:absolute;
-top:100%;
-left:0;
-width:100%;
-height:900px;
-background:#222;
+.gameDetailPanel ul li {
+	color: #FFF;
+	margin: 30px 0;
+	font-size: 20px;
 }
 
-.shots p a{
-	position:relative;
-	top:-120px;
-	right:233px;
+.gameDetailPanel ul p {
+	font-size: 40px;
+	color: #CC9;
 }
-.shots i{
 
-	font-size:28px;
-	padding:25px 28px;
+.gameDetailPanel ul li span {
+	padding: 5px 10px;
+	background: #020202;
+	border: 1px solid #333;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+.gameDetailPanel ul li label {
+	margin-left: 20px;
+	color: #0CC;
+	font-size: 15px;
+}
+
+#canvas {
+	position: absolute;
+	right: 100px;
+	top: 100px;
+}
+
+.shots {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 900px;
+	background: #222;
+}
+
+.shots p a {
+	position: relative;
+	top: -120px;
+	right: 233px;
+}
+
+.shots i {
+	font-size: 28px;
+	padding: 25px 28px;
 	border-radius: 50%;
-	color:white;
-	background:rgba(10,10,10,0.8);
-
-}
-.shots img{
-margin-left:40px;	
+	color: white;
+	background: rgba(10, 10, 10, 0.8);
 }
 
-.require{
-position:absolute;
-top:1450px;
-left:0;
-width:100%;
-height:auto;
-background:#222;	
+.shots img {
+	margin-left: 40px;
 }
 
-.require h2{
-color:#FFF;
-margin:100px;
-font-weight:normal;	
+.require {
+	position: absolute;
+	top: 1450px;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background: #222;
 }
 
-.require p{
-margin:-60px 100px;
-color:#999;	
-width:80%;
-font-size:18px;
+.require h2 {
+	color: #FFF;
+	margin: 100px;
+	font-weight: normal;
 }
 
-.require table{
-	margin-left:100px;
-	margin-top:-60px;
-	width:1150px;
-	background:#191919;
-	border-radius:5px;
-	
+.require p {
+	margin: -60px 100px;
+	color: #999;
+	width: 80%;
+	font-size: 18px;
 }
 
-.require table th{
-width:250px;
-
-color:#ccc;
-font-weight:normal; 	
-}
-.require table th,td{
-padding:20px;
-border-bottom:1px solid #666;
-color:#CCC;
+.require table {
+	margin-left: 100px;
+	margin-top: -60px;
+	width: 1150px;
+	background: #191919;
+	border-radius: 5px;
 }
 
-.require tr td:nth-child(1){
-color:#FFFFFF;	
-height:80px;
+.require table th {
+	width: 250px;
+	color: #ccc;
+	font-weight: normal;
+}
+
+.require table th, td {
+	padding: 20px;
+	border-bottom: 1px solid #666;
+	color: #CCC;
+}
+
+.require tr td:nth-child(1) {
+	color: #FFFFFF;
+	height: 80px;
 }
 
 /* css for main search animation */
-
 #cuboid {
 	width: 600px;
-	height:45px; 
-	margin:-180px 80px;
+	height: 45px;
+	margin: -180px 80px;
 	/*this also makes #cuboid a container for absolutely positioned descendants*/
 	perspective: 1000px;
 }
+
 #cuboid form {
 	/*counter translate*/
 	transform: translateZ(-20px);
@@ -263,134 +253,185 @@ height:80px;
 /*faces*/
 .cuboid-text {
 	/*each face will be 40px high*/
-	line-height: 40px; height: 40px;
-	background:#555;
+	line-height: 40px;
+	height: 40px;
+	background: #555;
 }
+
 .loader {
 	background: hsl(120, 40%, 30%);
 	animation: phase 1s infinite;
 }
 /*Lets create a pulsating animation for the loader face*/
-@keyframes phase {
-	50% {background: hsl(120, 70%, 30%);}
+@
+keyframes phase { 50% {
+	background: hsl(120, 70%, 30%);
+}
+
 }
 #searchid {
-	background: white; outline: none; border: 0 none;
-	font: inherit; text-align: left; color: hsl(120, 40%, 30%);
-	display: block; width: 100%; padding: 0 10px;
+	background: white;
+	outline: none;
+	border: 0 none;
+	font: inherit;
+	text-align: left;
+	color: hsl(120, 40%, 30%);
+	display: block;
+	width: 100%;
+	padding: 0 10px;
 	box-sizing: border-box;
 }
-#submit {display: none;}
+
+#submit {
+	display: none;
+}
 
 .submit-icon, .reset-icon {
-	position: absolute; top: 10px; right: 0;
+	position: absolute;
+	top: 10px;
+	right: 0;
 	color: rgba(0, 0, 0, 0.25);
-	line-height: 40px; padding: 0 10px;
+	line-height: 40px;
+	padding: 0 10px;
 	/*smooth transitions when user activates input and types something*/
 	transition: all 0.5s;
 	/*to make the icons feel like buttons*/
 	cursor: pointer;
 }
 /*.active = when the user is typing something*/
-.submit-icon.active {color: hsl(120, 40%, 30%);}
-.reset-icon {color: rgba(255, 255, 255, 0.25); font-size: 14px;}
+.submit-icon.active {
+	color: hsl(120, 40%, 30%);
+}
 
-#cuboid div {position: absolute; top: 0; left: 0; width: 100%;}
+.reset-icon {
+	color: rgba(255, 255, 255, 0.25);
+	font-size: 14px;
+}
+
+#cuboid div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
 /*3D transforms. Each face will be rotated in multiples of -90deg and moved 20px(half of their 40px height) out*/
-#cuboid div:nth-child(1) {transform: rotateX(0deg) translateZ(20px);}
-#cuboid div:nth-child(2) {transform: rotateX(-90deg) translateZ(20px);}
-#cuboid div:nth-child(3) {transform: rotateX(-180deg) translateZ(20px);}
-#cuboid div:nth-child(4) {transform: rotateX(-270deg) translateZ(20px);}
+#cuboid div:nth-child(1) {
+	transform: rotateX(0deg) translateZ(20px);
+}
+
+#cuboid div:nth-child(2) {
+	transform: rotateX(-90deg) translateZ(20px);
+}
+
+#cuboid div:nth-child(3) {
+	transform: rotateX(-180deg) translateZ(20px);
+}
+
+#cuboid div:nth-child(4) {
+	transform: rotateX(-270deg) translateZ(20px);
+}
 
 /*the form will have 4 states/classes(default+3) for rotation*/
-#cuboid form:hover, 
-#cuboid form.ready {transform: translateZ(-20px) rotateX(90deg);}
-#cuboid form.loading {transform: translateZ(-20px) rotateX(180deg);}
-#cuboid form.complete {transform: translateZ(-20px) rotateX(270deg);}
+#cuboid form:hover, #cuboid form.ready {
+	transform: translateZ(-20px) rotateX(90deg);
+}
 
-	#result
-	{
-		position:absolute;
-		width:578px;
-		padding:10px;
-		display:none;
-		margin:180px 80px;
-		z-index:5;
-		overflow:hidden;
-		border:1px #555 solid;
-		background-color:#333;
-	}
-	.show
-	{
-		padding:10px; 
-		border-bottom:1px #555 solid;
-		font-size:15px; 
-		height:50px;
-		color:#FFF;
-	}
-	.show:hover
-	{
-		background:#555;
-		color:#FFF;
-		cursor:pointer;
-	}
-	
-	.searchPanel{
-	position:absolute;
-	top:00px;
+#cuboid form.loading {
+	transform: translateZ(-20px) rotateX(180deg);
+}
+
+#cuboid form.complete {
+	transform: translateZ(-20px) rotateX(270deg);
+}
+
+#result {
+	position: absolute;
+	width: 578px;
+	padding: 10px;
+	display: none;
+	margin: 180px 80px;
+	z-index: 5;
+	overflow: hidden;
+	border: 1px #555 solid;
+	background-color: #333;
+}
+
+.show {
+	padding: 10px;
+	border-bottom: 1px #555 solid;
+	font-size: 15px;
+	height: 50px;
+	color: #FFF;
+}
+
+.show:hover {
+	background: #555;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.searchPanel {
+	position: absolute;
+	top: 00px;
 	left: 00px;
-	width:100%;
-	height:70%;
-	background:rgba(150,150,150,0.4);
-	}
-	.searchPanel #searchid{
-	width:450px;	
-	}
-	.find{
-		position:relative;
-		top:-40px;
-		left:460px;
-		width:100px;
-		height:40px;
-		background:#C00;
-		border:none;
-		cursor:pointer;
-	}
-	.searchPanel #result{
-		position:absolute;
-		width:428px;
-		padding:10px;
-		display:none;
-		margin:-30px 0px;
-		z-index:5;
-		overflow:hidden;
-		border:1px #555 solid;
-		background-color:#333;
-	}
-	
-.category{
-margin:0;
-width:200px;	
+	width: 100%;
+	height: 65%;
+	background: rgba(150, 150, 150, 0.4);
+}
+
+.searchPanel #searchid {
+	width: 450px;
+}
+
+.find {
+	position: relative;
+	top: -40px;
+	left: 460px;
+	width: 100px;
+	height: 40px;
+	background: #C00;
+	border: none;
+	cursor: pointer;
+}
+
+.searchPanel #result {
+	position: absolute;
+	width: 428px;
+	padding: 10px;
+	display: none;
+	margin: -30px 0px;
+	z-index: 5;
+	overflow: hidden;
+	border: 1px #555 solid;
+	background-color: #333;
+}
+
+.genre h4 {
+	margin: 0px 40px;
+	color: gray;
+	font-size: 17px;
+}
+
+.category {
+	margin: 0;
+	width: 200px;
 }
 
 /* Add game page css*/
-
-.material{
+.material {
 	margin: 50px 150px;
-	height:auto;
-	padding:50px;
-
+	height: auto;
+	padding: 50px;
 }
 
-.material input,textarea{
-	width:440px;
-	height:30px;
+.material input, textarea {
+	width: 440px;
+	height: 30px;
 	padding: 10px 0px 10px 20px;
 	border-radius: 3px;
-	border:1px solid #ddd;
-	background:#efefef;
-	margin:3px;
-
+	border: 1px solid #ddd;
+	background: #efefef;
+	margin: 3px;
 }
 
 .material input[type="file"] {
@@ -402,54 +443,93 @@ width:200px;
 	z-index: -1;
 }
 
-.material input[type="file"] + label {
+.material input[type="file"]+label {
 	font-size: 1em;
 	font-weight: 500;
 	color: white;
-	padding:10px;
+	padding: 10px;
 	border-radius: 3px;
-	margin-left:40px;
+	margin-left: 40px;
 	background-color: #888;
 	display: inline-block;
 }
 
-.material input[type="file"]:focus + label,
-.material input[type="file"] + label:hover {
+.material input[type="file"]:focus+label, .material input[type="file"]+label:hover
+	{
 	background-color: #555;
 }
 
-.material input[type="file"] + label {
+.material input[type="file"]+label {
 	cursor: pointer; /* "hand" cursor */
 }
 
-#upload{
-
+#upload {
 	background: #389ecb;
-	content:"\U0001f4be";
-	color:white;
+	content: "\U0001f4be";
+	color: white;
 	font-size: 1em;
-	margin:100px 370px;
-	width:200px;
-	padding:0px 10px;
-	height:45px;
+	margin: 100px 370px;
+	width: 200px;
+	padding: 0px 10px;
+	height: 45px;
 	cursor: pointer;
 }
 
-#upload:hover{
-    background: #286d94;
+#upload:hover {
+	background: #286d94;
 }
 
-#link{
-    position:absolute;
-    right:180px;
-    top:450px;
-    padding:10px 20px;
-    background:#e5b309;
-    text-decoration: blink;
-    color:white;
-
+#link {
+	position: absolute;
+	right: 180px;
+	top: 450px;
+	padding: 10px 20px;
+	background: #e5b309;
+	text-decoration: blink;
+	color: white;
 }
 
-#link:hover{
-    background: #ab8609;
+#link:hover {
+	background: #ab8609;
+}
+
+.dropbtn {
+	margin:-110px 60px;
+    background:none;
+    color: white;
+    width:160px;
+    padding: 16px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    outline:none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:-60px;
+    right: 80px;
+    font-size: 13px;
+    font-weight:300;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #cecece}
+
+.active {
+    display: block;
 }
